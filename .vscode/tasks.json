@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Final",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-o", "game.exe",
+                "main.cpp",
+                "-I", "D:/raylib_new/raylib-5.0_win64_mingw-w64/include",
+                "D:/raylib_new/raylib-5.0_win64_mingw-w64/lib/libraylib.a",
+                "-lopengl32",
+                "-lgdi32",
+                "-lwinmm",
+                "-static"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

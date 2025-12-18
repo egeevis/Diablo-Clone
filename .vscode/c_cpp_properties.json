@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/src/core",
+                "${workspaceFolder}/src/entities",
+                "${workspaceFolder}/src/rendering",
+                "${workspaceFolder}/src/systems",
+                "${workspaceFolder}/src/rendering/ui",
+                "${workspaceFolder}/third_party",
+                "${workspaceFolder}/third_party/raylib/include",
+                "D:/AI Games/Diablo Clone/third_party/raylib/include"  // Mutlak yol
+            ],
+            "defines": [],
+            "compilerPath": "D:/mingw64/bin/g++.exe",  // MinGW için
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}
