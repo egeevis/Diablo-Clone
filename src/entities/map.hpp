@@ -1,4 +1,3 @@
-// map.hpp - Düzeltilmiş
 #ifndef MAP_HPP
 #define MAP_HPP
 
@@ -32,23 +31,16 @@ public:
     Vector2 GetWorldSize() const;
     
     // Tile operations
-    Tile GetTile(int x, int y) const;
-    void SetTile(int x, int y, const Tile& tile);
     bool IsWalkable(int x, int y) const;
     bool IsWithinBounds(int x, int y) const;
     
 private:
-    void GenerateProcedural();
-    Color GetCheckerboardColor(int x, int y) const;
-    void DrawTile(int x, int y, Camera2D camera) const;
+    // v0.1 DÜZELTME: DrawTile parametre sayısı cpp ile eşitlendi (Camera kaldırıldı)
+    void DrawTile(int x, int y) const;
     
     int m_width;
     int m_height;
     std::vector<std::vector<Tile>> m_tiles;
-    
-    // Constants
-    static constexpr int DEFAULT_WIDTH = 25;
-    static constexpr int DEFAULT_HEIGHT = 18;
 };
 
 #endif
